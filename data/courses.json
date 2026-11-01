@@ -1,0 +1,49 @@
+{
+  "EECE503P": {
+    "name": "Agentic Systems",
+    "exam_date": "2026-12-15",
+    "topics": [
+      "Model Context Protocol (MCP)",
+      "Tool design principles",
+      "Data, action, and orchestration tools",
+      "Agent memory",
+      "Multi-agent systems"
+    ]
+  },
+  "EECE330": {
+    "name": "Data Structures and Algorithms",
+    "exam_date": "2026-12-12",
+    "topics": [
+      "Big-O complexity analysis",
+      "Arrays, linked lists, stacks, and queues",
+      "Trees and binary search trees",
+      "Heaps and priority queues",
+      "Hash tables",
+      "Sorting algorithms",
+      "Graphs: BFS and DFS",
+      "Shortest paths (Dijkstra)",
+      "Dynamic programming"
+    ]
+  },
+  "ENGL203": {
+    "name": "Academic English",
+    "exam_date": "2026-12-08",
+    "topics": [
+      "Essay structure and thesis statements",
+      "Paragraph development",
+      "Argumentative writing",
+      "Citing sources and avoiding plagiarism",
+      "Grammar and punctuation review",
+      "Reading comprehension"
+    ]
+  },
+  "EECE290": {
+    "name": "Signals and Systems",
+    "exam_date": "2026-10-20",
+    "topics": [
+      "Continuous and discrete signals",
+      "LTI systems and convolution",
+      "Fourier series"
+    ]
+  }
+}
