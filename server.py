@@ -98,7 +98,7 @@ def plan_prep(course_code: str) -> dict:
     """Orchestration logic: get the course (data), then save one session per topic (action),
     spread from today until the day before the exam, ending with a full review."""
     # Step 1: data logic
-    course = get_course(course_code)
+    course = get_course_info(course_code)
 
     # Step 2: failure case - exam already passed (or is today)
     if course["days_left"] <= 0:
@@ -123,7 +123,7 @@ def plan_prep(course_code: str) -> dict:
 
         # Step 5: action logic, with error resilience (one failure doesn't stop the plan)
         try:
-            created.append(add_session(course["course_code"], session_date, topic))
+            created.append(add_study_session(course["course_code"], session_date, topic)) 
         except ToolError as e:
             skipped.append({"date": session_date, "topic": topic, "reason": str(e)})
 
